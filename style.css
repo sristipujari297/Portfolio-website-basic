@@ -1,0 +1,376 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #F1E2D1;
+
+    color: #1f1a17;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    line-height: 1.5;
+}
+
+.container,
+.abt-us,
+.skills,
+.contact-section
+{
+    width: 85%;
+
+    margin: auto;
+}
+
+.navbar
+{
+    padding-top: 40px;
+
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.nav-links
+{
+    display: flex;
+
+    gap: 70px;
+
+    list-style: none;
+}
+
+.nav-links a
+{
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover
+{
+    color: #810B38;
+}
+
+
+.container
+{
+    padding-top: 50px;
+
+    min-height: 90vh;
+}
+
+img
+{
+    height: 320px;
+
+    width: auto;
+
+    float: right;
+
+    border-radius: 25px;
+
+    object-fit: cover;
+
+    margin-left: 60px;
+
+    margin-top: 80px;
+
+    margin-right: 50px;
+
+    border: #DCC3AA solid 10px;
+
+    transition: 0.4s ease;
+}
+
+img:hover
+{
+    transform: scale(1.05);
+
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.15);
+}
+
+h1
+{
+    font-size: 88px;
+
+    line-height: 1.05;
+
+    margin-top: 80px;
+
+    max-width: 900px;
+}
+
+.name
+{
+    color: #810B38;
+
+    font-style: italic;
+}
+
+.container p
+{
+    font-size: 28px;
+
+    margin-top: 30px;
+
+    color: #3f3833;
+}
+
+
+.abt-us,
+.skills,
+.contact-section
+{
+    margin-top: 220px;
+}
+
+
+.section-number,
+.abt-left p
+{
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+    color: #5f5650;
+
+    margin-bottom: 30px;
+}
+
+.abt-us
+{
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 100px;
+
+    align-items: flex-start;
+}
+
+.abt-left
+{
+    flex: 1;
+}
+
+.abt-right
+{
+    flex: 1.6;
+}
+
+.abt-left h2
+{
+    font-size: 60px;
+}
+
+.abt-right p
+{
+    font-size: 30px;
+
+    line-height: 1.7;
+
+    color: #3f3833;
+}
+
+
+.skills h2
+{
+    font-size: 60px;
+
+    margin-bottom: 50px;
+}
+
+
+.skills-grid
+{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+}
+
+
+.skill-box
+{
+    background-color: #f7ede2;
+
+    border: 1px solid #d8cabd;
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    transition: 0.3s ease;
+}
+
+.skill-box:hover
+{
+    transform: translateY(-6px);
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+.skill-box h3
+{
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+
+.skill-box ul
+{
+    padding-left: 25px;
+}
+
+.skill-box li
+{
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+
+.contact-card
+{
+    background-color: #f7ede2;
+
+    border: 1px solid #d8cabd;
+
+    border-radius: 35px;
+
+    padding: 60px;
+
+    margin-top: 40px;
+}
+
+.contact-card h2
+{
+    font-size: 82px;
+
+    margin-bottom: 25px;
+}
+
+.contact-card h2 span
+{
+    color: #810B38;
+
+    font-style: italic;
+}
+
+.contact-text
+{
+    font-size: 28px;
+
+    line-height: 1.6;
+
+    max-width: 750px;
+
+    color: #3f3833;
+
+    margin-bottom: 40px;
+}
+
+
+.contact-buttons
+{
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.btn
+{
+    text-decoration: none;
+
+    padding: 16px 30px;
+
+    border-radius: 999px;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.primary
+{
+    background-color: #810B38;
+
+    color: white;
+}
+
+.primary:hover
+{
+    background-color: #65092c;
+}
+
+.secondary
+{
+    border: 1px solid #d8cabd;
+
+    color: black;
+
+    background-color: transparent;
+}
+
+.secondary:hover
+{
+    background-color: #eadccd;
+}
+
+footer
+{
+    margin-top: 120px;
+
+    margin-bottom: 60px;
+
+    color: #5f5650;
+
+    font-size: 18px;
+}
+
+
+@media(max-width: 1000px)
+{
+    h1
+    {
+        font-size: 60px;
+    }
+
+    .abt-us
+    {
+        flex-direction: column;
+    }
+
+    .skills-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    img
+    {
+        float: none;
+
+        display: block;
+
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .contact-card h2
+    {
+        font-size: 56px;
+    }
+}
